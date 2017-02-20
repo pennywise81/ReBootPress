@@ -1,0 +1,45 @@
+/*! START OFF CANVAS */
+@include media-breakpoint-down(xs) {
+  html,
+  body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+  }
+
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+
+    &-right {
+      right: 0;
+
+      &.active {
+        right: 50%;
+      }
+
+      .sidebar-offcanvas {
+        right: -50%; /* 6 columns */
+      }
+    }
+
+    &-left {
+      left: 0;
+
+      &.active {
+        left: 50%;
+      }
+
+      .sidebar-offcanvas {
+        left: -50%; /* 6 columns */
+      }
+    }
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+/*! END OFF CANVAS */

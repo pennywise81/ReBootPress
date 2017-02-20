@@ -1,0 +1,33 @@
+/*! START HELPERS, FIXES, REUSABLES, ETC. */
+.container-fluid-limited {
+  max-width: $container-fluid-limited-width;
+}
+
+.btn.btn-edit {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    :hover > & {
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+
+.btn-offcanvas {
+  /*span {
+    display: none;
+  }*/
+
+  &.btn-offcanvas-left {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -.9375rem;
+  }
+}
+/*! END HELPERS, FIXES, REUSABLES, ETC. */

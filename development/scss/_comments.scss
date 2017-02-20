@@ -1,0 +1,43 @@
+/*! START COMMENTS */
+.comment {
+  &.comment-level-2 {
+    padding-left: $comment-padding;
+  }
+
+  &.comment-level-3 {
+    padding-left: $comment-padding * 2;
+  }
+
+  &.comment-level-4 {
+    padding-left: $comment-padding * 3;
+  }
+
+  &.comment-level-5 {
+    padding-left: $comment-padding * 4;
+  }
+
+  &.comment-level-6 {
+    padding-left: $comment-padding * 5;
+  }
+
+  &.byuser {}
+
+  &.bypostauthor {}
+
+  &.odd {}
+
+  &.even {}
+
+  .media-left {
+    img {}
+  }
+
+  .media-body {
+    .media-heading {
+      a {}
+    }
+
+    .comment-meta {}
+  }
+}
+/*! END COMMENTS */
